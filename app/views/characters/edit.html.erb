@@ -1,2 +1,7 @@
 <h1>Characters#edit</h1>
 <p>Find me in app/views/characters/edit.html.erb</p>
+<%= form_for @character do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :bio %>
+  <%= f.submit "Update" %>
+<% end %>
