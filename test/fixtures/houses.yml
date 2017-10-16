@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  place_id: MyString
+  name: MyString
+  house_saying: MyString
+  picture_url: MyString
+
+two:
+  place_id: MyString
+  name: MyString
+  house_saying: MyString
+  picture_url: MyString

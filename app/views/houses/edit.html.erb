@@ -1,0 +1,7 @@
+<h1>Houses#edit</h1>
+<p>Find me in app/views/houses/edit.html.erb</p>
+<%= form_for @house do |a| %>
+  <%= a.text_field :name %>
+  <%= a.text_field :house_saying %>
+  <%= a.submit "Update" %>
+<% end %>

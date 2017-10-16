@@ -1,0 +1,7 @@
+<h1>Weapons#edit</h1>
+<p>Find me in app/views/weapons/edit.html.erb</p>
+<%= form_for @weapon do |a| %>
+  <%= a.text_field :name %>
+  <%= a.text_area :description %>
+  <%= a.submit "Update" %>
+<% end %>

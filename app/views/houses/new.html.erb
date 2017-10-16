@@ -1,8 +1,8 @@
-<form action="/characters" method="post">
+<form action="/houses" method="post">
   Name:<br>
   <input type="text" name="name"><br>
-  Description:<br>
-  <input type="textarea" name="bio">
+  House_saying:<br>
+  <input type="text" name="house_saying">
   <input type="submit" value="Submit">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
 </form>
