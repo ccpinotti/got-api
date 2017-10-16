@@ -18,12 +18,24 @@
   <body>
     <nav>
       <div class="nav-wrapper blue-grey darken-3">
-        <a href="#" class="brand-logo">GoT API</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Characters</a></li>
+        <a href="#!" class="brand-logo">GoT API</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="/characters">Home</a></li>
+          <li><a href="/houses">Houses</a></li>
+          <li><a href="/weapons">Weapons</a></li>
+          <li><a href="/locations">Locations</a></li>
+          <li><a href="/characters">Characters</a></li>
           <li><a href="#">About</a></li>
         </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="/characters">Home</a></li>
+          <li><a href="/houses">Houses</a></li>
+          <li><a href="/weapons">Weapons</a></li>
+          <li><a href="/locations">Locations</a></li>
+          <li><a href="/characters">Characters</a></li>
+          <li><a href="#">About</a></li>
+      </ul>
       </div>
     </nav>
     <%= yield %>

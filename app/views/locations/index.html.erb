@@ -1,0 +1,7 @@
+<h1>Locations#index</h1>
+<ul>
+  <% @locations.each do |location| %>
+    <li> Name: <%= location.name %> </li>
+    <li> Description: <%= location.description %> </li>
+  <% end %>
+</ul>

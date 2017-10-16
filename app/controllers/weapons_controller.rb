@@ -22,7 +22,7 @@ class WeaponsController < ApplicationController
   end
 
   def update
-    @weapon = House.find(params[:id])
+    @weapon = Weapon.find(params[:id])
     @weapon.update_attributes(name: params[:weapon][:name], description: params[:weapon][:description])
     redirect_to '/weapons'
   end
