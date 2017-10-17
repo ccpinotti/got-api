@@ -15,8 +15,9 @@ class CharactersController < ApplicationController
   end
 
   def destroy
+    @character = Character.find(params[:id])
     @character.delete
-  redirect_to "/characters"
+    redirect_to "/characters"
   end
 
   #create and update database for new character
