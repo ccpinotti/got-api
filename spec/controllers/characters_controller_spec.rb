@@ -7,4 +7,12 @@ describe CharactersController do
       expect(response).to be_success
     end
   end
+
+  describe '#destroy' do
+    it 'should delete a record' do
+      @character = Character.create()
+      delete :destroy, params: { id: @character.id }
+      expect(Character.count).to eql(0)
+    end
+  end
 end
