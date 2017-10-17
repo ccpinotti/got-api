@@ -1,0 +1,9 @@
+<h1>Weapons#new</h1>
+<form action="/weapons" method="post">
+  Name:<br>
+  <input type="text" name="name"><br>
+  Description:<br>
+  <input type="textarea" name="description">
+  <input type="submit" value="Submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+</form>
