@@ -5,3 +5,7 @@
   <%= f.text_area :description %>
   <%= f.submit "Update" %>
 <% end %>
+<br>
+<%= form_for @location, method: :delete do |a| %>
+  <%= a.submit "Delete" %>
+<% end %>

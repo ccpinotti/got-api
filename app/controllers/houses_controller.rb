@@ -13,7 +13,10 @@ class HousesController < ApplicationController
   def show
   end
 
-  def delete
+  def destroy
+    @house = House.find(params[:id])
+    @house.delete
+    redirect_to "/houses"
   end
 
   def create

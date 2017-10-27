@@ -13,7 +13,10 @@ class LocationsController < ApplicationController
   def show
   end
 
-  def delete
+  def destroy
+    @location = Location.find(params[:id])
+    @location.delete
+    redirect_to "/locations"
   end
 
   def create

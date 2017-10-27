@@ -1,0 +1,9 @@
+<h1>Titles#new</h1>
+<form action="/titles" method="post">
+  Title:<br>
+  <input type="text" title="title"><br>
+  Description:<br>
+  <input type="integer" name="charcter_id">
+  <input type="submit" value="Submit">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+</form>

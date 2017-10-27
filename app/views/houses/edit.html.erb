@@ -5,3 +5,7 @@
   <%= a.text_field :house_saying %>
   <%= a.submit "Update" %>
 <% end %>
+<br>
+<%= form_for @house, method: :delete do |a| %>
+  <%= a.submit "Delete" %>
+<% end %>
